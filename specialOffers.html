@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Special Offers</title>
+		<style type="text/css">
+		/* Code below changes the background colour to teal i.e. the main browser window */
+		body {background-color: teal;}
+		
+		/* The d1 class selector below includes float: left which allows positioning of elements beside each other by floating to the left of the containing element */
+		.d1{float: left;}
+		
+		/* Below applies Arial font to all paragraphs using the p type selector */
+		p {font-family: Arial;}
+		
+		/* The heading class applies font size and color elements */
+		.heading {font-size: 36px; color: DeepPink;}
+		
+		/* The d2 class clears the float and applies a new float */
+		.d2 {clear: left; float: left;}
+			
+		</style>
+	</head>
+<body>
+	<!-- The CSS class d1 is applied to elements within this div resulting in them being positioned beside each other after float -->
+	<div class="d1">
+	<!-- Using a relative URL to link back to the home page (as files are in the same folder). The images are made clickable by being placed inside the <a> tags -->
+	<a href="homepage.html"><img src="logoPinkH.jpg" width="130" alt="Homepage"></a>
+	<a href="products.html"><img src="logoPinkProducts.jpg" width="130" alt="Products"></a>
+	<a href="specialOffers.html"><img src="logoPinkSpecial.jpg" width="130" alt="Special Offers"></a>
+	</div>
+	
+	<div class="d2">
+		<h1 class="heading">Special Offers</h1>
+		<!-- <img> used to embed an image, src attribute specifies the path to the image, alt attribute specifies alternative text for the image if it cannot be displayed 
+		-->
+		<!-- Width specified in pixels(when height was also specified the image looked out of proportion so width only specified to rectify
+		-->
+			<img src="peonies.jpeg" alt="Peonies" width="300">
+	</div>
+	
+</body>
+<html>

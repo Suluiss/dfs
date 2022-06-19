@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Products</title>
+		<style type="text/css">
+		/* Code below changes the background colour to teal i.e. the main browser window */
+		body {background-color: teal;}
+		
+		/* The d1 class below includes float: left which allows positioning of elements beside each other by floating to the left of the containing element */
+		.d1{float: left;}
+		
+		/* Below applies Arial font to all paragraphs */
+		p {font-family: Arial;}
+			
+		/* card1 class specifies the HTML elements for the product card */
+		.card1 {background-color: gray; max-width: 300px; margin: 50px; text-align: center; font-family: arial; clear: left; float: left;}
+		
+		/* card2 class specifies the HTML elements for the product card without 'clear: left' */
+		.card2 {background-color: gray; max-width: 300px; margin: 50px; text-align: center; font-family: arial; float: left;}
+		
+		
+		/* price class specifies the HTML elements for the price section of the product card */
+		.price {color: teal; font-size: 26px;}
+
+		/* cbutton class specifies the HTML elements for the button section of the product card */
+		.cbutton {border: none; outline: 0; padding: 12px; color: white; background-color: black; text-align: center; cursor: pointer; width: 100%; font-size: 18px;}
+
+		</style>
+	</head>
+	<body>
+		<!-- The CSS class d1 is applied to elements within this div resulting in them being positioned beside each other after float -->
+		<div class="d1">
+		<!-- Using a relative URL to link back to the home page (as files are in the same folder). The images are made clickable by being placed inside the <a> tags -->
+		<a href="homepage.html"><img src="logoPinkH.jpg" width="130" alt="Homepage"></a>
+		<a href="products.html"><img src="logoPinkProducts.jpg" width="130" alt="Products"></a>
+		<a href="specialOffers.html"><img src="logoPinkSpecial.jpg" width="130" alt="Special Offers"></a>
+		</div>
+		
+		<!-- The card1 class is applied to the product card -->
+		<div class="card1">
+			<!-- <img> tag used to imbed an image, relative URL to specify the file path to the image, alt attribute displays text if image does not load -->
+			<img src="bonsai.jpeg" alt="Bonsai" style="width: 300px">
+				<h1>Bonsai Tree</h1>
+					<!-- price class applied and '&euro' used to display the euro symbol in the price section of the card -->
+					<p class="price">&euro; 50.00</p>
+					<p>Japanese Tree</p>
+						<!-- <div> to create a label for and input box to allow the user to input the quantity of the product required -->
+						<div>
+							<label for="qty-1">Quantity</label>
+							<input type="text" name="qty-1" id="qty-1" class="qty" value="1" />
+						</div>
+					<!-- cbutton class applied -->
+					<p><button class="cbutton">Add to Cart</button></p>
+		</div>
+	
+		<div class="card2">
+			<img src="flowersYellow.jpg" alt="Yellow Gerbolas" style="width: 100%">
+				<h1>Spring Bunch</h1>
+					<p class="price">&euro; 10.99</p>
+					<p>The perfect spring arrangement</p>
+						<div>
+							<label for="qty-1">Quantity</label>
+							<input type="text" name="qty-1" id="qty-1" class="qty" value="1" />
+						</div>
+					<p><button class="cbutton">Add to Cart</button></p>
+		</div>
+		
+		<div class="card2">
+			<img src="peonies.jpeg" alt="Peonies" style="width: 300px">
+				<h1>Pink peonies</h1>
+					<p class="price">&euro; 15.99</p>
+					<p>Glorious pink peonies with a delightful fragrance</p>
+						<div>
+							<label for="qty-1">Quantity</label>
+							<input type="text" name="qty-1" id="qty-1" class="qty" value="1" />
+						</div>
+					<p><button class="cbutton">Add to Cart</button></p>
+		</div>
+		
+		<div class="card2">
+			<img src="roses.jpeg" alt="Roses" style="width: 300px">
+				<h1>Red roses</h1>
+					<p class="price">&euro; 21.50</p>
+					<p>Romance! Romance! Romance!</p>
+						<div>
+							<label for="qty-1">Quantity</label>
+							<input type="text" name="qty-1" id="qty-1" class="qty" value="1" />
+						</div>
+					<p><button class="cbutton">Add to Cart</button></p>
+		</div>
+		
+		<script>
+			//Incomplete function to present total cost to user
+			function calculateTotal() {
+				var quantity = document.getElementById("qty-1").value;
+				var price = document.getElementById("price").value;
+				var total_price = quantity * price;
+			}
+		</script>
+	
+</body>
+<html>
